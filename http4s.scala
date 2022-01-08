@@ -1,7 +1,8 @@
 // using scala 3.1.0
+// using scala-js
 // using repository sonatype:snapshots
-// using lib org.http4s::http4s-ember-server:1.0-245-0671d49-SNAPSHOT
-// using lib com.monovore::decline-effect:2.2.0
+// using lib org.http4s::http4s-ember-server::1.0-245-0671d49-SNAPSHOT
+// using lib com.monovore::decline-effect::2.2.0
 // import com.monovore.decline.effect._
 
 import cats.effect.*
@@ -16,7 +17,7 @@ import org.http4s.server.staticcontent.*
 object Http4sCli
     extends CommandIOApp(
       name = "http4s",
-      header = "http4s simple static server",
+      header = "static file server, backed by http4s ember",
       version = "0.0.1"
     ):
 

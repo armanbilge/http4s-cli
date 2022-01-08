@@ -21,4 +21,4 @@ jobs:
         uses: coursier/setup-action@v1.2.0-M1
 
       - name: build
-        run: ./scala-cli compile http4s.scala
+        run: npm run build

@@ -1,0 +1,21 @@
+{
+  "name": "http4s",
+  "version": "0.0.1",
+  "description": "start a static file server, backed by http4s ember",
+  "main": "http4s.js",
+  "files": ["http4s.js"],
+  "scripts": {
+    "build": "./scala-cli package -f --js-module-kind commonjs --js-mode release http4s.scala && echo '#!/usr/bin/env node' | cat - http4s.js > tmp && mv tmp http4s.js",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armanbilge/http4s-cli.git"
+  },
+  "author": "Arman Bilge",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/armanbilge/http4s-cli/issues"
+  },
+  "homepage": "https://github.com/armanbilge/http4s-cli#readme"
+}
