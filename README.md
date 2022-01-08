@@ -12,7 +12,7 @@ npm i -g http4s-cli
 ```
 Usage: http4s [--bind <ADDRESS>] [--directory <DIRECTORY>] [<port>]
 
-http4s simple static server
+static file server, backed by http4s ember
 
 Options and flags:
     --help
