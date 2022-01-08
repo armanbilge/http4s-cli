@@ -7,7 +7,7 @@ Like `python3 -m http.server`, but backed by [http4s](https://http4s.org) ember 
 npm i -g http4s
 ```
 
-## Usage
+## Use
 
 ```
 Usage: http4s [--bind <ADDRESS>] [--directory <DIRECTORY>] [<port>]
@@ -24,3 +24,7 @@ Options and flags:
     --directory <DIRECTORY>, -d <DIRECTORY>
         Specify alternative directory [default:current directory]
 ```
+
+## Learn
+
+This repo demonstrates how to publish a Scala.js app to npm using [scala-cli](https://scala-cli.virtuslab.org/).
