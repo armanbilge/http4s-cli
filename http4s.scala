@@ -1,5 +1,6 @@
 // using scala 3.1.0
-// using lib org.http4s::http4s-ember-server:0.23.7
+// using repository sonatype:snapshots
+// using lib org.http4s::http4s-ember-server:1.0-245-0671d49-SNAPSHOT
 // using lib com.monovore::decline-effect:2.2.0
 // import com.monovore.decline.effect._
 
@@ -58,7 +59,7 @@ object Http4sCli
       .build
       .evalTap(s =>
         IO.println(
-          s"Serving HTTP on ${s.address.getAddress} port ${s.address.getPort} (http://${s.address}/)"
+          s"Serving HTTP on ${s.address.host} port ${s.address.port} (http://${s.address}/)"
         )
       )
       .useForever
