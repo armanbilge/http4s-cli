@@ -1,0 +1,24 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: ['**']
+  push:
+    branches: ['**']
+    tags: [v*]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch (full)
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: coursier-setup-action
+        uses: coursier/setup-action@v1.2.0-M1
+
+      - name: build
+        run: ./scala-cli compile http4s.scala
