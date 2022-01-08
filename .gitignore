@@ -1,5 +1,6 @@
 .bsp
 .metals
+.npmrc
 .scala
 .vscode
 *.js
