@@ -1,9 +1,11 @@
 {
-  "name": "http4s",
-  "version": "0.0.1",
+  "name": "http4s-cli",
+  "version": "0.0.2",
   "description": "start a static file server, backed by http4s ember",
   "main": "http4s.js",
-  "bin": "./http4s.js",
+  "bin": {
+    "http4s": "./http4s.js"
+  },
   "scripts": {
     "build": "./scala-cli package -f --js-module-kind commonjs --js-mode release http4s.scala && echo '#!/usr/bin/env node' | cat - http4s.js > tmp && mv tmp http4s.js",
     "prepare": "npm run build"

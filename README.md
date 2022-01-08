@@ -4,7 +4,7 @@ Like `python3 -m http.server`, but backed by [http4s](https://http4s.org) ember 
 
 ## Install
 ```
-npm i -g http4s
+npm i -g http4s-cli
 ```
 
 ## Use
