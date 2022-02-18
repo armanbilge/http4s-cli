@@ -22,7 +22,7 @@ Options and flags:
     --bind <ADDRESS>, -b <ADDRESS>
         Specify alternate bind address [default: all interfaces]
     --directory <DIRECTORY>, -d <DIRECTORY>
-        Specify alternative directory [default:current directory]
+        Specify alternative directory [default: current directory]
 ```
 
 ## Learn

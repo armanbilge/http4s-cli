@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: ['**']
   push:
-    branches: ['**']
+    branches: ['main']
     tags: [v*]
 
 jobs:
@@ -13,7 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: coursier/setup-action@v1.2.0-M1
+      - run: |
+          curl -s --compressed "https://virtuslab.github.io/scala-cli-packages/KEY.gpg" | sudo apt-key add -
+          sudo curl -s --compressed -o /etc/apt/sources.list.d/scala_cli_packages.list "https://virtuslab.github.io/scala-cli-packages/debian/scala_cli_packages.list"
+          sudo apt update
+          sudo apt install scala-cli
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
