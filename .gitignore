@@ -4,3 +4,5 @@
 .scala
 .vscode
 *.js
+*.js.map
+.scala-build

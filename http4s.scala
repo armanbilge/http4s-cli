@@ -1,9 +1,10 @@
-// using scala 3.1.0
-// using scala-js
-// using repository sonatype:snapshots
-// using lib org.http4s::http4s-ember-server::1.0-245-0671d49-SNAPSHOT
-// using lib com.monovore::decline-effect::2.2.0
-// import com.monovore.decline.effect._
+//> using scala "3.1.1"
+//> using jsVersion "1.9.0"
+//> using jsHeader "#!/usr/bin/env node\n"
+//> using jsEmitSourceMaps "true"
+//> using jsModuleKind "CommonJS"
+//> using lib "org.http4s::http4s-ember-server::0.23.8"
+//> using lib "com.monovore::decline-effect::2.2.0"
 
 import cats.effect.*
 import cats.syntax.all.*
@@ -18,7 +19,7 @@ object Http4sCli
     extends CommandIOApp(
       name = "http4s",
       header = "static file server, backed by http4s ember",
-      version = "0.0.2"
+      version = "0.1.0"
     ):
 
   val port = Opts
@@ -45,7 +46,7 @@ object Http4sCli
       "directory",
       short = "d",
       metavar = "DIRECTORY",
-      help = "Specify alternative directory [default:current directory]"
+      help = "Specify alternative directory [default: current directory]"
     )
     .withDefault(".")
 

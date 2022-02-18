@@ -1,2 +1,2 @@
 #!/usr/bin/sh
-cs launch -r sonatype:snapshots org.virtuslab.scala-cli:cli_2.12:0.0.9+25-g38a9ae8-SNAPSHOT -M scala.cli.ScalaCli -- "$@"
+cs launch org.virtuslab.scala-cli:cli_2.12:0.1.1 -M scala.cli.ScalaCli -- "$@"
