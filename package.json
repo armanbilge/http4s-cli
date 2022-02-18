@@ -7,8 +7,8 @@
     "http4s": "./http4s.js"
   },
   "scripts": {
-    "build": "./scala-cli package -f --js --js-mode release http4s.scala",
-    "prepare": "./scala-cli package -f --js http4s.scala"
+    "build": "./scala-cli package -f --js http4s.scala",
+    "prepare": "./scala-cli package -f --js --js-mode release http4s.scala"
   },
   "repository": {
     "type": "git",
