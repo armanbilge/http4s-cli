@@ -1,4 +1,5 @@
 //> using scala "3.1.1"
+//> using platform "scala-js"
 //> using jsVersion "1.9.0"
 //> using jsHeader "#!/usr/bin/env node\n"
 //> using jsEmitSourceMaps "true"
