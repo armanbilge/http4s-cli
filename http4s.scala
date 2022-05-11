@@ -2,7 +2,7 @@
 //> using platform "scala-js"
 //> using jsVersion "1.9.0"
 //> using jsHeader "#!/usr/bin/env node\n"
-//> using jsEmitSourceMaps "true"
+//> using jsEmitSourceMaps true
 //> using jsModuleKind "CommonJS"
 //> using lib "org.http4s::http4s-ember-server::0.23.8"
 //> using lib "com.monovore::decline-effect::2.2.0"

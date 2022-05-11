@@ -17,7 +17,7 @@ jobs:
       - uses: coursier/setup-action@v1.2.0-M3
         with:
           jvm: temurin:1.17
-          apps: scala-cli
+          apps: scala-cli:0.1.5
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
